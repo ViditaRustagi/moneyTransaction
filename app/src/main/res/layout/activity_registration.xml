@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:keepScreenOn="true"
+    android:visibility="visible"
+    tools:context="com.example.kanika.applicaton.Registration">
+
+
+    <EditText
+        android:id="@+id/Reg_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/MarqueeText"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reg_Userid"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Reg_Userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reg_name"
+        android:ems="10"
+        android:hint="User ID"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Reg_phn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp"
+        android:layout_below="@+id/Reg_pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/Reg_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reg_phn"
+        android:ems="10"
+        android:hint="Profession"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reg_profession"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textColor="#006064"
+        android:textColorHint="#00E5FF"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00BFA5"
+        android:text="SUBMIT"
+        android:textSize="24sp"
+        android:layout_below="@+id/Reg_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/MarqueeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="27dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:scrollHorizontally="true"
+        android:text="******  ENTER YOUR REGISTRATION DETAILS CAREFULLY  ******"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#64FFDA"
+        android:text="SIGN IN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#1A237E"
+        android:textSize="30sp" />
+
+</RelativeLayout>
